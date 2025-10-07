@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>English Learning</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .lesson {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .word {
+      cursor: pointer;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .tooltip {
+      position: absolute;
+      background: #333;
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+      display: none;
+    }
+
+
+
+
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .word-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 200px;
+      margin-bottom: 40px;
+    }
+
+    .column {
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    button {
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background-color: #005ecb;
+    }
+
+
+    /* 🟦 ตัวหุ้ม player เพื่อจัดให้อยู่ตรงกลาง */
+    .player-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0;
+      /* เว้นระยะจากหัวเรื่อง */
+    }
+
+    .player-container {
+      background-color: #7bbdc4;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+      width: 80%;
+      max-width: 700px;
+      color: white;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 32px;
+      font-weight: normal;
+    }
+
+    audio {
+      width: 100%;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>lesson 1 family</h1>
+  <!-- 🟩 ครอบ player ด้วย .player-wrapper -->
+  <div class="player-wrapper">
+    <div class="player-container">
+      <audio controls>
+        <source src="https://www.robinsoncrusoeinlevels.com/wp-content/uploads/2018/11/RC-L1-Ch1-slow.mp3"
+          type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+
+  <div class="lesson">
+    <p>
+      My name is Robinson. I am from England. I am eighteen years old.
+      My father is German. My mother is English. I have two brothers.
+      I have one sister. We are a good family.
+    </p>
+    <p>
+      My father is a good businessman. We have money. I have a good school.
+      I have a good life. But I have a <span class="word" data-meaning="ຄວາມຝັນ">dream</span>.
+      I <span class="word" data-meaning="ຕ້ອງການ">want</span> to <span class="word"
+        data-meaning="ທ່ອງທ່ຽວ">travel</span>.
+      I want to <span class="word" data-meaning="ເຫັນ">see</span> the <span class="word"
+        data-meaning="ໂລກ">world</span>.
+    </p>
+    <p>
+      My father is a good man. He wants the <span class="word" data-meaning="ດີທີ່ສຸດ">best</span> for me.
+      But my dream is not his dream. He is not happy.
+      The <span class="word" data-meaning="ສະຖານະການ">situation</span> is not <span class="word"
+        data-meaning="ງ່າຍ">easy</span>.
+    </p>
+    <p>
+      It is <span class="word" data-meaning="ເຊົ້າ">morning</span>.
+      My father is in his <span class="word" data-meaning="ຫ້ອງ">room</span>.
+      He wants to <span class="word" data-meaning="ເວົ້າ">speak</span> with me.
+      I go to his room. My father wants to <span class="word" data-meaning="ຮູ້">know</span>
+      <span class="word" data-meaning="ເປັນຫຍັງ">why</span> I want to travel.
+    </p>
+    <!-- คุณสามารถเพิ่มเนื้อหาอีกเรื่อย ๆ ได้ -->
+
+    <p>
+      My father says, “Travelling is <span class="word" data-meaning="ອັນຕະລາຍ">dangerous.</span> Travelling is not
+      <span class="word" data-meaning="ສະດວກ,ສະບາຍ">comfortable.</span> You <span class="word"
+        data-meaning="ອາດຈະ,ສາມາດ">can</span> <span class="word" data-meaning="ຕາຍ">die.</span>”
+    </p>
+
+    <p>
+      I <span class="word" data-meaning="ຄິດ">think</span> about it. Travelling is dangerous. It is not comfortable. I
+      can die. But it is
+      <span class="word" data-meaning="ອີກດ້ວຍ">also</span>
+      <span class="word" data-meaning="ຫຼາຍ">very</span>
+      <span class="word" data-meaning="ໜ້າສົນໃຈ">interesting.</span> I can see new <span class="word"
+        data-meaning="ປະເທດ">countries.
+
+      </span> I can <span class="word" data-meaning="ພົບ">meet</span>
+      new <span class="word" data-meaning="ພົບ">people.</span>
+
+      <span class="word" data-meaning="ໜ້າສົນໃຈ">interesting.</span> I can see new countries. I can meet new people.
+    </p>
+    <p>
+      I think about travelling <span class="word" data-meaning="ທຸກໆ">every </span>day.
+      <span class="word" data-meaning="ບາງທີ">Maybe </span> my mother can <span class="word" data-meaning="ຊ່ວຍ">help
+      </span> me.
+    </p>
+    <p>
+      I speak with my mother. I <span class="word" data-meaning="ບອກ">tell </span> my mother, “I want to travel. I want
+      to see the world. Please, speak with my father. Maybe with your help, I can travel.”
+    </p>
+    <p>
+      My mother <span class="word" data-meaning="ຮັກ">loves </span>
+      me. But she thinks <span class="word" data-meaning="ວ່າ,ນັ່ນ">that</span> travelling is dangerous. She thinks that
+      my
+      <span class="word" data-meaning="ສະຖານທີ່">place</span> is at home. She thinks that life in England is the
+      <span class="word" data-meaning="ດີທີ່ສຸດ">best</span> for me.
+    </p>
+    <p>
+      One year <span class="word" data-meaning="ພາຍຫລັງ">later,</span> I visit one big
+      <span class="word" data-meaning="ເມືອງ">town.</span> The
+      <span class="word" data-meaning="ຊື່">name</span> of this town is Hull.
+    </p>
+    <p>
+      I meet my friend. His father has a <span class="word" data-meaning="ເຮຶອໃຫຍ່">ship.</span> They travel to London.
+      My friend tells me,
+      “<span class="word" data-meaning="ໄປ">Go</span> with me.”
+    </p>
+    <p>
+      I think about it. I am not <span class="word" data-meaning="ກະກຽມ">prepared.</span> But I can
+      <span class="word" data-meaning="ພະຍາຍາມ">try</span> <span class="word" data-meaning="ຖ້າວ່າ">if</span> travelling
+      is for me.
+    </p>
+    <p>
+      I go to London. I am very happy. It is my <span class="word" data-meaning="ຄັ້ງທຳອິດ">first</span> long
+      <span class="word" data-meaning="ການເດີນທາງ">journey.</span> It is very interesting. The first
+      <span class="word" data-meaning="ຊົ່ວໂມງ">hour</span> is good.
+      But <span class="word" data-meaning="ຫລັງຈາກນັ້ນ">then</span> we have
+      <span class="word" data-meaning="ບັນຫາ">problems.</span> We see a storm. The
+      <span class="word" data-meaning="ພາຍຸ">storm</span> is big. The
+      <span class="word" data-meaning="ລົມ">wind</span> is
+      <span class="word" data-meaning="ແຂງແຮງ">strong.</span> The ship goes
+      <span class="word" data-meaning="ຂື້ນ">up</span> and
+      <span class="word" data-meaning="ຂື້ນ">down.</span>
+      I have
+      <span class="word" data-meaning="ໃກ">fear.</span> I think about my home. I think about my comfortable bed.
+    </p>
+    <p>
+      The storm is
+      <span class="word" data-meaning="ຈົບແລ້ວ">finished</span> in the morning. The
+      <span class="word" data-meaning="ສະພາບອາກາດ">weather</span> is
+      <span class="word" data-meaning="ດີ">nice.</span> And the
+      <span class="word" data-meaning="ຕອນແລງ">evening</span> is
+      <span class="word" data-meaning="ສວຍງາມ">beautiful.</span>
+      <span class="word" data-meaning="ທຸກຢ່າງ">Everything</span> is
+      <span class="word" data-meaning="ງຽບ">quiet.</span>
+    </p>
+    <p>
+      One man <span class="word" data-meaning="ມາ">comes</span> to me. We speak. We speak about the storm. I speak about
+      my fear.
+      The man
+      <span class="word" data-meaning="ໃຫ້">gives</span> me a
+      <span class="word" data-meaning="ດື່ມ">drink.</span> I drink very
+      <span class="word" data-meaning="ຫຼາຍ">much.</span> I
+      <span class="word" data-meaning="ນອນ">sleep</span> very
+      <span class="word" data-meaning="ດີ">well</span> at
+      <span class="word" data-meaning="ກາງຄື່ນ">night.</span>
+    </p>
+    <p>
+      The <span class="word" data-meaning="ຕໍ່ໄປ">next</span> day, I <span class="word" data-meaning="ລື່ມ">forget</span>
+       about my home. I forget about my comfortable bed. I dream 
+       <span class="word" data-meaning="ເພີ່ມເຕີມ">more</span> about travelling.
+    </p>
+     <p>
+    
+    
+    
+    
+    
+    <hr/>
+    <h1>WORDS FROM CHAPTER 1</h1>
+
+    <div class="word-list">
+      <div class="column">
+        <div>also</div>
+        <div>tell</div>
+        <div>best</div>
+        <div>can</div>
+        <div>think</div>
+        <div>strong</div>
+        <div>travel</div>
+        <div>die</div>
+        <div>down</div>
+        <div>dream</div>
+        <div>drink</div>
+        <div>easy</div>
+        <div>visit</div>
+        <div>every</div>
+        <div>why</div>
+        <div>fear</div>
+        <div>want</div>
+      </div>
+
+      <div class="column">
+        <div>first</div>
+        <div>then</div>
+        <div>give</div>
+        <div>go</div>
+        <div>help</div>
+        <div>hour</div>
+        <div>if</div>
+        <div>try</div>
+        <div>very</div>
+        <div>know</div>
+        <div>later</div>
+        <div>love</div>
+        <div>maybe</div>
+        <div>meet</div>
+        <div>more</div>
+        <div>wind</div>
+        <div>much</div>
+      </div>
+
+      <div class="column">
+        <div>name</div>
+        <div>next</div>
+        <div>nice</div>
+        <div>night</div>
+        <div>people</div>
+        <div>place</div>
+        <div>town</div>
+        <div>up</div>
+        <div>quiet</div>
+        <div>room</div>
+        <div>world</div>
+        <div>see</div>
+        <div>ship</div>
+        <div>well</div>
+        <div>sleep</div>
+        <div>speak</div>
+        <div>storm</div>
+      </div>
+
+      <div class="column">
+        <div>country</div>
+        <div>beautiful</div>
+        <div>that</div>
+        <div>forget</div>
+        <div>comfortable</div>
+        <div>prepared</div>
+        <div>dangerous</div>
+        <div>interesting</div>
+        <div>problem</div>
+        <div>journey</div>
+        <div>evening</div>
+        <div>finished</div>
+        <div>weather</div>
+        <div>situation</div>
+        <div>everything</div>
+        <div>morning</div>
+      </div>
+    </div>
+    <!---------ປຸ່ມໄປກັບ------------->
+    <div class="nav-buttons">
+      <button onclick="prevChapter()">⬅ Previous/ກັບຄືນ</button>
+      <button onclick="nextChapter()">Next / ທັດໄປ ➡</button>
+    </div>
+
+  </div>
+
+
+  <div id="tooltip" class="tooltip"></div>
+
+  <script>
+    const words = document.querySelectorAll('.word');
+    const tooltip = document.getElementById('tooltip');
+
+    words.forEach(word => {
+      word.addEventListener('click', (e) => {
+        tooltip.innerText = word.dataset.meaning;
+        tooltip.style.display = 'block';
+        tooltip.style.left = e.pageX + 'px';
+        tooltip.style.top = (e.pageY - 30) + 'px';
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.classList.contains('word')) {
+        tooltip.style.display = 'none';
+      }
+    });
+  </script>
+  <script>
+    // เปลี่ยนเป็นชื่อไฟล์ของบทก่อนหน้าและบทถัดไป
+    function prevChapter() {
+      window.location.href = "chapter0.html"; // ใส่ลิงก์บทก่อนหน้า
+    }
+
+    function nextChapter() {
+      window.location.href = "chapter2.html"; // ใส่ลิงก์บทถัดไป
+    }
+  </script>
+
+</body>
+
+</html>
